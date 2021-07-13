@@ -1,17 +1,12 @@
-import React, {Component} from 'react';
-import Products from './Products';
-import {Button} from 'react-bootstrap';
+import Todo from './Todo';
 
-class App extends Component {
-  render(){
-    return(
-      <div>
-        <h1>My first React App</h1>
-        <Products/>
-        <Button>Default</Button>
-      </div>
-    );
-  }
-}
+function App() {
+  return (
+    <div>
+      <h1>My Todos</h1>
+      <Todo text='Learn React' />
+    </div>
+  );
+};
 
 export default App;
